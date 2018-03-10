@@ -8,5 +8,6 @@
 *.zip
 *.tar.gz
 *.rar
-.iml
-.idea
+*.iml
+*.idea
+*.lst

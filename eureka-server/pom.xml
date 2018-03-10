@@ -5,13 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.lyn.spring</groupId>
-    <artifactId>spring-boot-cloud-parent</artifactId>
+    <artifactId>eureka-server</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>spring-boot-hello</module>
-        <module>cloud-eureka-server</module>
-    </modules>
-    <packaging>pom</packaging>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -20,13 +16,6 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>io.spring.platform</groupId>
-                <artifactId>platform-bom</artifactId>
-                <version>Brussels-SR7</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>Edgware.SR2</version>
@@ -34,6 +23,11 @@
                 <scope>import</scope>
             </dependency>
         </dependencies>
-
     </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+        </dependency>
+    </dependencies>
 </project>

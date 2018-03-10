@@ -6,10 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloud-eureka-server" />
         <module name="spring-boot-hello" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cloud-eureka-server" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="fdgdd" target="1.8" />
       <module name="spring-boot-cloud-parent" target="1.8" />
       <module name="spring-boot-hello" target="1.8" />
     </bytecodeTargetLevel>
