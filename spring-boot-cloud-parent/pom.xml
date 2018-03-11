@@ -10,6 +10,7 @@
     <modules>
         <module>spring-boot-hello</module>
         <module>cloud-eureka-server</module>
+        <module>ribbon-consumer</module>
     </modules>
     <packaging>pom</packaging>
     <parent>
